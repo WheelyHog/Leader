@@ -35,6 +35,18 @@ body {
   list-style: none;
 }
 
+.logo{
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-menu-btn{
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .navbar-item a {
   font-size: 18px;
   line-height: 17px;
@@ -126,6 +138,16 @@ body {
 .banner-inner {
   display: flex;
   z-index: 5;
+}
+
+.banner-left{
+  position: relative;
+}
+
+.banner-left-arrow{
+  position: absolute;
+  bottom: 170px;
+  left: -55px;
 }
 
 .banner-left-title {
