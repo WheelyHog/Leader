@@ -165,11 +165,118 @@ body {
 .timer span {
   font-size: 29px;
 }
+@media (max-width: 1500px) {
+  .navbar{
+    gap: 30px;
+  }
+  .timer-text{
+    max-width: 600px;
+  }
+}
+@media (max-width: 1200px) {
+  .enter-btn,
+  .open-btn{
+    height: 40px;
+    border-radius: 10px;
+  }
+  .open-btn{
+    height: 40px;
+    width: 180px;
+  }
+  .enter-btn{
+    width: 80px;
+  }
+  .navbar-item a{
+    font-size: 14px;
+  }
+  .logo-img{
+    width: 94px;
+    height: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar-item:nth-child(2),
+  .navbar-item:nth-child(3),
+  .navbar-item:nth-child(4),
+  .navbar-item:nth-child(5),
+  .navbar-item:nth-child(6){
+    display: none;
+  }
+  .mobile-menu-btn{
+    display: block;
+  }
+  .header-timer{
+    flex-direction: column;
+    align-items: start;
+  }
+  .timer-descr{
+    order: 2;
+    margin-top: 10px;
+  }
+  .timer-img{
+    order: 2;
+  }
+  .timer-text h6,
+  .timer-text p{
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  .timer{
+    font-size: 14px;
+  }
+  .timer span{
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .enter-btn,
+  .open-btn{
+    height: 30px;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .enter-btn{
+    width: 50px;
+  }
+  .open-btn{
+    width: 80px;
+  }
+  .header-bg{
+    width: 100%;
+  }
+  .header-inner{
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .timer-img{
+    height: 30px;
+    width: 30px;
+  }
+  .enter-btn{
+    margin-right: 10px;
+  }
+  .header-timer h6,
+  .header-timer p,
+  .timer{
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .timer span{
+    font-size: 12px;
+  }
+}
 
 /* =========================== BANNER =================== */
 .banner {
   margin-top: 60px;
   position: relative;
+}
+.banner-right-bg{
+  display: none;
 }
 
 .banner-inner {
@@ -177,7 +284,8 @@ body {
   z-index: 5;
 }
 
-.banner-left{
+.banner-left,
+.banner-right{
   position: relative;
 }
 
@@ -243,11 +351,94 @@ body {
   margin-left: 12px;
 }
 
-.banner-right-bg {
+.banner-right-bg-global {
   position: absolute;
   top: -250px;
-  right: 0;
+  right: 0px;
   z-index: -1;
+}
+
+@media (max-width: 1500px) {
+  .banner-left-title{
+    font-size: 60px;
+  }
+  .banner-list-item{
+    font-size: 24px;
+  }
+  .banner-right-bg-global{
+    width: 70%;
+  }
+  .banner-left-arrow{
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .banner-download-btn,
+  .banner-open-btn{
+    height: 80px;
+    width: 300px;
+  }
+  .download-button-icon{
+    width: 70px;
+    top: 0;
+    right: -15px;
+  }
+}
+@media (max-width:768px) {
+  .banner-right-bg-global{
+    display: none;
+  }
+  .banner-inner{
+    flex-direction: column;
+  }
+  .banner-right-bg{
+    display: block;
+    width: 100%;
+    margin-top: -150px;
+    z-index: -1;
+  }
+  .banner-left-title{
+    font-size: 30px;
+  }
+  .banner-list{
+    letter-spacing: normal;
+  }
+  .banner-list-item{
+    font-size: 12px;
+  }
+  .banner-download-btn,
+  .banner-open-btn{
+    width: 109px;
+    height: 31px;
+    font-size: 7px;
+    border-radius: 3px;
+  }
+  .banner-download-btn{
+    padding-right: 20px;
+  }
+  .download-button-icon{
+    width: 40px;
+    top: -5px;
+    right: -10px;
+  }
+  .user-avatar{
+    width: 30px;
+  }
+  .user-avatar:nth-child(2),
+  .user-avatar:nth-child(3){
+    margin-left: -10px;
+  }
+  .banner-users{
+    margin-top: 30px;
+  }
+  .banner-users p{
+    font-size: 10px;
+  }
+  @media (max-width: 425px) {
+    .banner-right-bg{
+      margin-top: -80px;
+    }
+  }
 }
 
 /* =============== INVEST =============== */
