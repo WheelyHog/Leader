@@ -511,6 +511,71 @@ body {
   margin-bottom: 162px;
 }
 
+@media (max-width: 1024px) {
+  .invest-title h2{
+    font-size: 60px;
+  }
+  .invest-item img{
+    width: 100px;
+  }
+  .invest-item h3{
+    font-size: 24px;
+  }
+  .invest-item button{
+    font-size: 16px;
+    width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .invest{
+margin-top: -100px;
+  }
+  .invest-items{
+    margin-top: 100px;
+  }
+  .invest-title h2{
+    font-size: 44px;
+  }
+  .invest-title p{
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+  .invest-item img{
+    width: 70px;
+  }
+  .invest-item h3{
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .invest-item button{
+    font-size: 10px;
+    width: 70px;
+  }
+  .invest-catalog{
+    margin-top: 50px;
+  }
+  .invest-catalog p{
+    letter-spacing: normal;
+  }
+  .invest-catalog button{
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .invest-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .invest-item:nth-child(even) {
+    margin-top: 0px;
+  }
+}
+
 /* ============== TOOLS ============== */
 .tools {
   text-align: center;
